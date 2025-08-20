@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>きせつの星ざ - 小学生向け星座学習アプリ</title>
+    <meta name="description" content="春夏秋冬の星座を楽しく学べる小学生向けアプリ">
+    <link rel="icon" href="/favicon.ico" />
+    <!-- Chrome拡張機能エラーを抑制 -->
+    <script>
+      // Chrome拡張機能のエラーを抑制
+      window.addEventListener('error', function(e) {
+        if (e.message.includes('message port closed') || 
+            e.message.includes('Extension context')) {
+          e.preventDefault();
+          return true;
+        }
+      });
+      
+      window.addEventListener('unhandledrejection', function(e) {
+        if (e.reason && e.reason.message && 
+            (e.reason.message.includes('message port closed') ||
+             e.reason.message.includes('Extension context'))) {
+          e.preventDefault();
+          return true;
+        }
+      });
+    </script>
+    <!-- The `react-native-web` recommended style reset -->
+    <style id="expo-reset">
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        overflow: hidden;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+          'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+          sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      #root {
+        display: flex;
+        height: 100%;
+        flex: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <noscript>
+      このアプリを使用するにはJavaScriptを有効にしてください。
+    </noscript>
+    <div id="root"></div>
+  </body>
+</html>
