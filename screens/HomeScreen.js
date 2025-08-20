@@ -52,8 +52,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#f0f8ff',
   },
   scrollContent: {
+    flexGrow: 1,
     padding: 20,
     alignItems: 'center',
+    paddingBottom: 40,
   },
   title: {
     fontSize: 28,

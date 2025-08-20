@@ -60,7 +60,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#f0f8ff',
   },
   scrollContent: {
-    paddingBottom: 30,
+    flexGrow: 1,
+    paddingBottom: 50,
   },
   header: {
     padding: 30,
